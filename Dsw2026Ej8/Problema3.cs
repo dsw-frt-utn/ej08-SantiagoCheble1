@@ -6,12 +6,15 @@ namespace Dsw2026Ej8
 {
     internal class Problema3
     {
-        public void CompararCopias(int originalValue, ProductHelper Product)
+        public string CompararCopias(int originalValue, Product product)
         {
-            int value = originalValue;
-            value++;
+            int valorCopia = originalValue;
+            valorCopia++;
 
-            var producto = Product;
+            var producto = product;
+            producto.setDescripcion("cambiando la descripcion");
+
+            return $"{originalValue} - {valorCopia} - {producto.getDescripcion()} ";
         }
     }
 }
