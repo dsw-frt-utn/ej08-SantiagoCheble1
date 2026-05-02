@@ -12,7 +12,7 @@ namespace Dsw2026Ej8
             double total = quantity > 0 ? quantity * unitPrice : 0;
 
 
-            object venta = new
+            var venta = new
             {
                 Code = productCode,
                 Product = productDescription,
